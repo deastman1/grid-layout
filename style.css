@@ -1,0 +1,44 @@
+/* This div selector is just to see borders while we practie layout*/
+div {
+    border: 3px solid rgb(32, 25, 14);
+
+}
+
+/* This is where the actual layout begins */
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr 0.5fr;
+}
+
+.top {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: rgb(61, 42, 25);
+    text-align: center;
+    color: white;
+    font: 30px
+}
+
+.leftbox {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: palevioletred;
+}
+
+.rightbox {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: blanchedalmond;
+}
+
+.bottom {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background-color: rgb(68, 48, 21);
+    text-align: right;
+    color: whitesmoke;
+    padding-right: 30px;
+}
